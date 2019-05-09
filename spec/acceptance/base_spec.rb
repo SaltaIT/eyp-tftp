@@ -17,5 +17,9 @@ describe 'tftp class' do
       expect(apply_manifest(pp).exit_code).to eq(0)
     end
 
+    describe port(69) do
+      it { should be_listening }
+    end
+
   end
 end
