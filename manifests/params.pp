@@ -1,7 +1,7 @@
 class tftp::params {
 
   $package_name=[ 'tftp', 'tftp-server' ]
-  $service_name='tftp'
+  $service_name='tftp.socket'
 
   case $::osfamily
   {

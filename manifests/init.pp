@@ -1,4 +1,8 @@
 class tftp(
+            $manage_service           = true,
+            $manage_docker_service    = true,
+            $service_ensure           = 'running',
+            $service_enable           = true,
             $manage_package           = true,
             $package_ensure           = 'installed',
             $basedir                  = '/var/ftp',
@@ -13,6 +17,7 @@ class tftp(
 
   class { '::tftp::install': }
   -> class { '::tftp::config': }
+  ~> class { '::tftp::service': }
   -> Class['::tftp']
 
 }
