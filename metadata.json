@@ -2,15 +2,15 @@
   "name": "eyp-tftp",
   "version": "0.1.0",
   "author": "eyp",
-  "summary": "TFTP management",
+  "summary": "TFTP management using systemd",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-tftp",
   "project_page": "https://github.com/NTTCom-MS/eyp-tftp",
   "issues_url": "https://github.com/NTTCom-MS/eyp-tftp/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0 < 9.9.9"},
-    {"name":"eyp/xinetd","version_requirement":">= 0.1.0 < 0.2.0"},
-    {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"}
+    {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/systemd","version_requirement":">= 0.2.1 < 0.3.0"}
   ],
   "operatingsystem_support": [
     {
