@@ -44,7 +44,7 @@ class tftp::config inherits tftp {
     description    => 'TFTP server',
     requires       => [ 'tftp.socket' ],
     documentation  => 'man:in.tftpd',
-    execstart      => [ "/usr/sbin/in.tftpd -s -c -v -u ${tftp::user} -p -U ${tftp::umask} -s ${tftp::basedir}" ],
+    execstart      => [ "/usr/sbin/in.tftpd -p -s -c -v -u ${tftp::user} -U ${tftp::umask} -s ${tftp::basedir}" ],
     standard_input => 'socket',
     also           => [ 'tftp.socket' ],
   }
