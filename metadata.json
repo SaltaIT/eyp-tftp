@@ -1,6 +1,6 @@
 {
   "name": "eyp-tftp",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Jordi Prats",
   "summary": "TFTP management using systemd",
   "license": "Apache-2.0",
